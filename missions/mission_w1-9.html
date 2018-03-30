@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>mission9 | 테이블 마크업</title>
+    <style>
+        table, th, td {
+            border-spacing: 0;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>
+        금리안내<small>예금 / 적금 및 대출 금리를 한눈에 확인할 수 있습니다.</small>
+    </h2>
+
+
+    <table>
+        <caption>
+            <strong>예금/적금</strong>
+            <small>기준일자 : 2018.03.30 (연이율, 세전, 단위 : %)</small>
+        </caption>
+        <thead>
+            <tr>
+                <th id="di-1" scope="col" rowspan="2">상품명</th>
+                <th id="di-2" scope="col" rowspan="2">이자지급방법</th>
+                <th id="di-3" scope="col" rowspan="2">기간</th>
+                <th id="di-4" scope="colgroup" colspan="2">금리</th>
+            </tr>
+            <tr>
+                <th id="di-4-1" scope="col">기본</th>
+                <th id="di-4-2" scope="col">우대<small>주1)</small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="di-1">카카오뱅크 입출금통장</td>
+                <td headers="di-2">결산원가식</td>
+                <td headers="di-3">-</td>
+                <td headers="di-4 di-4-1">0.10</td>
+                <td headers="di-4 di-4-2">-</td>
+            </tr>
+            <tr>
+                <td headers="di-1">세이프박스</td>
+                <td headers="di-2">결산원가식</td>
+                <td headers="di-3">-</td>
+                <td headers="di-4 di-4-1">1.20</td>
+                <td headers="di-4 di-4-2">-</td>
+            </tr>
+            <tr>
+                <td headers="di-1" rowspan="4">카카오뱅크 자유적금</td>
+                <td headers="di-2" rowspan="4">만기일시지급식</td>
+                <td headers="di-3">6개월 이상 12개월 미만</td>
+                <td headers="di-4 di-4-1">1.80</td>
+                <td headers="di-4 di-4-2">0.20</td>
+            </tr>
+            <tr>
+                <td headers="di-3">12개월 이상 24개월 미만</td>
+                <td headers="di-4 di-4-1">2.00</td>
+                <td headers="di-4 di-4-2">0.20</td>
+            </tr>
+            <tr>
+                <td headers="di-3">24개월 이상 36개월 미만</td>
+                <td headers="di-4 di-4-1">2.10</td>
+                <td headers="di-4 di-4-2">0.20</td>
+            </tr>
+            <tr>
+                <td headers="di-3">36개월</td>
+                <td headers="di-4 di-4-1">2.20</td>
+                <td headers="di-4 di-4-2">0.20</td>
+            </tr>
+            <tr>
+                <td headers="di-1" rowspan="6">카카오뱅크 정기예금</td>
+                <td headers="di-2" rowspan="6">만기일시지급식</td>
+                <td headers="di-3">1개월 이상 3개월 미만</td>
+                <td headers="di-4 di-4-1">1.30</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+            <tr>
+                <td headers="di-3">3개월 이상 6개월 미만</td>
+                <td headers="di-4 di-4-1">1.50</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+            <tr>
+                <td headers="di-3">6개월 이상 12개월 미만</td>
+                <td headers="di-4 di-4-1">1.80</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+            <tr>
+                <td headers="di-3">12개월 이상 24개월 미만</td>
+                <td headers="di-4 di-4-1">2.20</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+            <tr>
+                <td headers="di-3">24개월 이상 36개월 미만</td>
+                <td headers="di-4 di-4-1">2.25</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+            <tr>
+                <td headers="di-3">36개월</td>
+                <td headers="di-4 di-4-1">2.30</td>
+                <td headers="di-4 di-4-2">0.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>※ 주1) 우대금리 조건은 카카오뱅크 모바일앱 또는 상품설명서를 참고하시기 바랍니다.</p>
+
+    <table>
+        <caption>
+            <strong>대출</strong>
+            <small>기준일자 : 2018.03.30 (단위 : %)</small>
+        </caption>
+        <thead>
+            <tr>
+                <th id="ln-1" scope="col">기준금리</th>
+                <th id="ln-2" scope="col">변동주기</th>
+                <th id="ln-3" scope="col">기본금리</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="ln-1">신규 취급액 기준 COFIX <small>주1)</small></td>
+                <td headers="ln-2">6개월</td>
+                <td headers="ln-3">1.770</td>
+            </tr>
+            <tr>
+                <td headers="ln-1" rowspan="4">금융채(AAA)유통수익률 <small>주2)</small></td>
+                <td headers="ln-2">3개월</td>
+                <td headers="ln-3">1.652</td>
+            </tr>
+            <tr>
+                <td headers="ln-2">6개월</td>
+                <td headers="ln-3">1.800</td>
+            </tr>
+            <tr>
+                <td headers="ln-2">12개월</td>
+                <td headers="ln-3">2.024</td>
+            </tr>
+            <tr>
+                <td headers="ln-2">5년</td>
+                <td headers="ln-3">2.650</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        ※ 기준일자에 대출을 하는 경우, 적용되는 기준금리입니다. 대출금리는 기준금리에 상품종류 및 신용등급 등 기준에 따라 가산금리를 더하여 적용됩니다.<br>
+        ※ 주1) 기준일자의 2영업일 전 전국은행연합회에서 고시한 금리 적용<br>
+        ※ 주2) 기준일자의 2영업일 전 한국금융투자협회에서 고시한 금리 적용
+    </p>
+
+
+
+
+</body>
+</html>
