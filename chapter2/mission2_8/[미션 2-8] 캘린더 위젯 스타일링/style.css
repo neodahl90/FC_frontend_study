@@ -1,0 +1,38 @@
+@charset "utf-8"
+
+/* Fonts */
+@font-face {
+    font-family: 'GOTHAMBOOK';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://github.com/neodahl90/FC_frontend_study/blob/master/chapter2/mission2_8/fonts/GOTHAMBOOK.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Gotham Book';
+font-style: normal;
+font-weight: normal;
+src: url('GOTHAMBOOK.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+/* reset */
+html * {
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    line-height: 1.5;
+} */
+
+
+.test {
+    font-family: 'GOTHAMBOOK';
+    font-size: 50px;
+}
