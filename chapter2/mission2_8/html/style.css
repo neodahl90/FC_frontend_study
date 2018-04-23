@@ -2,10 +2,16 @@
 
 /* Fonts */
 @font-face {
-    font-family: GOTHAMBOOK;
-    font-weight: normal;
+    font-family: Gotham;
     font-style: normal;
+    font-weight: normal;
     src: url("https://raw.githubusercontent.com/neodahl90/FC_frontend_study/master/chapter2/mission2_8/fonts/GOTHAMBOOK.woff") format("woff");
+}
+@font-face {
+    font-family: Gotham-Light;
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://raw.githubusercontent.com/neodahl90/FC_frontend_study/master/chapter2/mission2_8/fonts/Gotham-Light.otf") format("OpenType");
 }
 
 
@@ -14,8 +20,141 @@
 html * {
     margin: 0;
     padding: 0;
+    font-family: Gotham;
 }
-.test {
-    font-family: GOTHAMBOOK;
-    font-size: 50px;
+button {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* Common Styles */
+.a11y_hidden {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0,0,0,0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Check Box */
+input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: -11px;
+}
+input[type="checkbox"]:checked + label:before {
+    background: #fff url("https://raw.githubusercontent.com/neodahl90/FC_frontend_study/master/chapter2/mission2_8/img/Check.png") center center no-repeat;
+}
+input[type="checkbox"] + label {
+    font-size: 30px;
+}
+
+
+/* Style */
+
+
+.calendar_wrapper {
+    width: 1750px;
+    height: 1000px;
+}
+.calendar_wrapper .left_area {
+    float: left;
+    width: 850px;
+    height: 100%;
+    padding-left: 50px;
+    background-color: #78a840;
+    box-sizing: border-box;
+    box-shadow: 4px 0 7px #d2d2d2;
+}
+.calendar_wrapper .left_area .container {
+    height: 100%;
+    padding: 50px;
+    color: #fff;
+    background-color: #8bc34a;
+    box-sizing: border-box;
+}
+.left_area .container .header_area {
+    position: relative;
+    padding-top: 274px;
+    margin-bottom: 172px;
+}
+.left_area .header_area h2 {
+    font-family: Gotham-Light;
+    font-size: 84px;
+    font-weight: lighter;
+}
+.header_area .btn_menu {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 54px;
+    height: 36px;
+    background: transparent url("https://raw.githubusercontent.com/neodahl90/FC_frontend_study/master/chapter2/mission2_8/img/Icon_Menu.png") center center no-repeat;;
+}
+.header_area .btn_more {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 54px;
+    height: 45px;
+    background: transparent url("https://raw.githubusercontent.com/neodahl90/FC_frontend_study/master/chapter2/mission2_8/img/Icon_More.png") center center no-repeat;;
+}
+
+.left_area .container .reminders h3 {
+    font-size: 30px;
+    line-height: 1.5;
+    border-bottom: 1px solid #fff;
+}
+.left_area .container .reminders ul {
+    margin-top: 24px;
+}
+.left_area .container .reminders ul li {
+    margin-bottom: 20px;
+}
+
+
+
+
+.calendar_wrapper .right_area {
+    float: left;
+    width: 900px;
+    height: 100%;
+    padding: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.right_area h3 {
+    font-family: Gotham-Light;
+    font-weight: lighter;
+    font-size: 60px;
+    color: #808080;
+    text-align: right;
+}
+
+
+
+.calendar_container .cal_month a {
+    font-size: 18px;
+    color: #bfbfbf;
+}
+.calendar_container .cal_month a.on {
+    font-size: 30px;
+    color: #808080;
 }
