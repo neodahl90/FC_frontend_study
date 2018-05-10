@@ -22,6 +22,9 @@
     padding: 0;
     font-family: Montserrat;
 }
+li {
+    list-style: none;
+}
 button {
     border: none;
 }
@@ -57,6 +60,14 @@ a {
 
 
 /* arbuzz Style */
+
+
+/* Layout */
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 
 /* HEADER */
@@ -160,18 +171,20 @@ header .header_menu {
 
 /* Global Navigation Bar */
 header .gnb {
+    position: relative;
     border-top: 1px solid #f2f2f2;
 }
+
+/* GNB - depth 1 */
 .gnb .depth_1 {
     width: 940px;
     margin: 0 auto;
     text-align-last: justify;
 }
-.gnb .depth_1 a {
+.gnb .depth_1 > a {
     line-height: 68px;
 }
-
-.gnb .depth_1 a.has_depth2::after {
+.gnb .depth_1 > a.has_depth2::after {
     content: '';
     display: inline-block;
     width: 7px;
@@ -181,6 +194,64 @@ header .gnb {
     vertical-align: 3px;
 }
 
+/* GNB - depth 2 */
+.gnb .depth_1:hover .depth_2_wrapper {
+    display: block;
+}
+
+
+.gnb .depth_2_wrapper {
+    /* display: none; */
+    position: absolute;
+    top: 69px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    text-align-last: auto;
+    line-height: 1.5;
+}
+
+.depth_2_wrapper .depth_2 {
+    width: 940px;
+    margin: 0 auto;
+    /* box-shadow: 0 0 1px 0 #000; */
+}
+.depth_2 > li {
+    float: left;
+    width: calc(100%/4);
+}
+
+.depth_2 > li h3 {
+    line-height: 48px;
+    font-size: 11px;
+    letter-spacing:  0.2em;
+}
+.depth_2 > li ul li {
+    line-height: 26px;
+    font-size: 12px;
+    color: #b8b9bd; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,6 +259,7 @@ header .gnb {
 /* MAIN AREA */
 main {
     min-width: 1200px;
+    background-color: #e5e5e5;
 }
 .main_slider .slider_item img {
     width: 100%;
